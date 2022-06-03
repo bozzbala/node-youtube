@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Add new post</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            html{
+                font-family: Arial;
+            }
+
+            header{
+                background: #E1EEE7;
+            }
+
+            .header-wrap{
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                height: 80px;
+                align-items: center;
+            }
+
+            .logo img{
+                width: 56px;
+                height: 56px;
+            }
+
+            nav{
+                display:flex;
+                width: 40%;
+                justify-content: space-between;
+            }
+
+            .menu{
+                padding: 10px 15px;
+                position: relative;
+                background-color: white;
+                box-shadow: -4px 4px 0px 0px gray;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+
+            .menu:hover{
+                right: 4px;
+                top: 4px;
+                box-shadow: 0px 0px 0px 0px;
+            }
+
+            .menu a{
+                color: black;
+                text-decoration: none;
+            }
+
+            main{
+                background-color: #B5FBEE;
+                min-height: 100vh;
+                overflow:hidden;
+            }
+
+            .example{
+                width: 50%;
+                padding: 20px;
+                margin: 20px auto;
+                background-color: white;
+                border-radius: 30px;
+                box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+            }
+        </style>
+    </head>
+    <body>
+        <%-include('./partials/nav.ejs %>
+        <main>
+            <div class="example">
+                <form action="" method="post">
+                    <input type="text" placeholder="Post title">
+                    <input type="text" placeholder="Post text">
+                    <input type="text" placeholder="Author">
+                    <input type="text" placeholder="Date">
+                    <input type="submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

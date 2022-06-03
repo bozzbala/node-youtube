@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<%- include('./partials/head.ejs'); %>
+<body>
+    <%- include('./partials/nav.ejs'); %>
+    <main>
+        <div class="example">
+            <ul>
+                <% if(contacts.length){ %>
+                    <% contacts.forEach(({link, name}) => {%>
+                        <li>
+                            <a href="<%= link %>"><%= name %></a>
+                        </li>
+                    <% }) %>
+                <% } %>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

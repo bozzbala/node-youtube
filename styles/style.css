@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial;
+}
+
+header{
+    background: #E1EEE7;
+}
+
+.header-wrap{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo img{
+    width: 56px;
+    height: 56px;
+}
+
+nav{
+    display:flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.menu{
+    padding: 10px 15px;
+    position: relative;
+    background-color: white;
+    box-shadow: -4px 4px 0px 0px gray;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu:hover{
+    right: 4px;
+    top: 4px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    background-color: #B5FBEE;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.example{
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+.title-content{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title-content button{
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+.title-btn{
+    display: flex;
+}
+
+.example form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.addTT{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.addTT input{
+    font-size: 28px;
+    padding: 2px;
+    border-radius: 5px;
+}

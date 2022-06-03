@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posts</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-family: Arial;
+        }
+
+        header{
+            background: #E1EEE7;
+        }
+
+        .header-wrap{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            align-items: center;
+        }
+
+        .logo img{
+            width: 56px;
+            height: 56px;
+        }
+
+        nav{
+            display:flex;
+            width: 40%;
+            justify-content: space-between;
+        }
+
+        .menu{
+            padding: 10px 15px;
+            position: relative;
+            background-color: white;
+            box-shadow: -4px 4px 0px 0px gray;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .menu:hover{
+            right: 4px;
+            top: 4px;
+            box-shadow: 0px 0px 0px 0px;
+        }
+
+        .menu a{
+            color: black;
+            text-decoration: none;
+        }
+
+        main{
+            background-color: #B5FBEE;
+            min-height: 100vh;
+            overflow:hidden;
+        }
+
+        .example{
+            width: 50%;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <%-include('./partials/nav.ejs %>
+    <main>
+        <div class="example">
+            <h2><a href="/posts/1">Article</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur consequatur culpa,
+                dignissimos iste maiores minima natus necessitatibus nobis odit officia officiis perferendis quae quis
+                reprehenderit sequi ut vero voluptas.</p>
+            <div class="info">
+                <span>Temirlan I</span>
+                <span>24.05.2022</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

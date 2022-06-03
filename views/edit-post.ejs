@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs'); %>
+<body>
+<%- include('./partials/nav.ejs'); %>
+<main>
+    <div class="example">
+        <form action="/edit/<%= post.id %>?_method=PUT " method="post" >
+            <div class="addTT">
+                <input type="text" name="title" value="<%= post.title%>">
+
+                <input type="text" name="text" value="<%= post.text %>">
+            </div>
+
+            <div class="addTT">
+                <input type="text" name="author" value="<%= post.author %>">
+            </div>
+            <div class="addTT">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
